@@ -1,7 +1,7 @@
 <h1>This is the posts page</h1>
 
-<% for (var i = 0; i < posts.length; i++) { %>
+<% posts.forEach (function(post) { %>
     <li> 
-        <%= posts[i].title %> - <strong> <%= posts[i].author %> </strong> 
+        <%= post.title %> - <strong> <%= post.author %> </strong> 
     </li>
-<% } %>
+<% }); %>
